@@ -29,7 +29,7 @@ def key_words(row):
 
 
 if __name__ == '__main__':
-        tweets_data_path = '/Users/zen/Dropbox/Regis/MSDS600/req_output.json'
+        tweets_data_path = './req_output.json'
         tweets_data = []
 
         tweets_data = readTwitterData(tweets_data_path)
