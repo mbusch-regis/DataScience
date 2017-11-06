@@ -5,19 +5,19 @@ import pylab
 
 
 def readTwitterData(twitterDataFile):
-        tweets = []
-        with open(twitterDataFile, encoding="utf-8") as infile:
-                for line in infile:
-                        tweets.append(json.loads(json.loads(line)))
-        print(type(tweets[0]))
-        return tweets
+    tweets = []
+    with open(twitterDataFile, encoding="utf-8") as infile:
+            for line in infile:
+                    tweets.append(json.loads(json.loads(line)))
+    print(type(tweets[0]))
+    return tweets
 
 
 
 if __name__ == '__main__':
     if sys.argv[1] == '':
         tweets_data_path = './req_output.json'
-   else:
+    else:
         tweets_data_path = sys.argv[1]
     
 

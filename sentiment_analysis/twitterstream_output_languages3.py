@@ -5,12 +5,12 @@ import pylab
 
 
 def readTwitterData(twitterDataFile):
-        tweets = []
-        with open(twitterDataFile, encoding="utf-8") as infile:
-                for line in infile:
-                        tweets.append(json.loads(json.loads(line)))
-        print(type(tweets[0]))
-        return tweets
+    tweets = []
+    with open(twitterDataFile, encoding="utf-8") as infile:
+            for line in infile:
+                    tweets.append(json.loads(json.loads(line)))
+    print(type(tweets[0]))
+    return tweets
 
 
 
